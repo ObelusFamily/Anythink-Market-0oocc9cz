@@ -41,7 +41,7 @@ class ItemsController < ApplicationController
   end
 
   def search
-    query = params[:search]
+    query = params[:title]
 
     results = Item.where('title LIKE ?', "%#{query}%")
       @items = results
