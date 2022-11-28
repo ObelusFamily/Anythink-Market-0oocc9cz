@@ -11,7 +11,6 @@ class ItemsController < ApplicationController
     @items = @items.tagged_with(params[:tag]) if params[:tag].present?
     @items = @items.sellered_by(params[:seller]) if params[:seller].present?
     @items = @items.favorited_by(params[:favorited]) if params[:favorited].present?
-
     @items_count = @items.count
 
     @items = @items.order(created_at: :desc).offset(params[:offset] || 0).limit(params[:limit] || 100)
@@ -68,7 +67,6 @@ class ItemsController < ApplicationController
 
   def update
     @item = Item.find_by!(slug: params[:slug])
-
     if @item.user_id == @current_user_id
       @item.update_attributes(item_params)
 
