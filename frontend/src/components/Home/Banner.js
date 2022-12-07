@@ -13,8 +13,15 @@ const Banner = () => {
         </div>
         <div>
           <form class="form-group">
-            <input type="text" placeholder="Search" name="title" aria-label="Search"/>
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <input
+              type="text"
+              placeholder="Search"
+              name="title"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button>
           </form>
         </div>
       </div>
