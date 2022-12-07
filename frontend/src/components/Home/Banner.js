@@ -11,6 +11,12 @@ const Banner = () => {
           <span id="get-part">get</span>
           <span> the cool stuff.</span>
         </div>
+        <div>
+          <form class="form-group">
+            <input type="text" placeholder="Search" name="title" aria-label="Search"/>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
       </div>
     </div>
   );
