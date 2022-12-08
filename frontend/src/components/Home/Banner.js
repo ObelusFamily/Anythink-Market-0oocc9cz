@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../../imgs/logo.png";
 
+
 const Banner = () => {
   return (
     <div className="banner text-white">
@@ -9,20 +10,15 @@ const Banner = () => {
         <div>
           <span>A place to </span>
           <span id="get-part">get</span>
-          <span> the cool stuff.</span>
-        </div>
-        <div>
-          <form class="form-group">
-            <input
+          <input class="mx-2 col-4 rounded"
               type="text"
-              placeholder="Search"
+              id="search-box"
+              placeholder="What is it that you truly desire ?"
               name="title"
               aria-label="Search"
-            />
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-              Search
-            </button>
-          </form>
+          />
+
+          <span> the cool stuff.</span>
         </div>
       </div>
     </div>
