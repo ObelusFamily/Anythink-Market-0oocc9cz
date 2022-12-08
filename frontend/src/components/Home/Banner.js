@@ -9,20 +9,16 @@ const Banner = () => {
         <div>
           <span>A place to </span>
           <span id="get-part">get</span>
+          <input
+            class="mx-2 col-4 rounded"
+            type="text"
+            id="search-box"
+            placeholder="What is it that you truly desire ?"
+            name="title"
+            aria-label="Search"
+          />
+
           <span> the cool stuff.</span>
-        </div>
-        <div>
-          <form class="form-group">
-            <input
-              type="text"
-              placeholder="Search"
-              name="title"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-              Search
-            </button>
-          </form>
         </div>
       </div>
     </div>
