@@ -1,7 +1,6 @@
 import React from "react";
 import logo from "../../imgs/logo.png";
 
-
 const Banner = () => {
   return (
     <div className="banner text-white">
@@ -10,12 +9,13 @@ const Banner = () => {
         <div>
           <span>A place to </span>
           <span id="get-part">get</span>
-          <input class="mx-2 col-4 rounded"
-              type="text"
-              id="search-box"
-              placeholder="What is it that you truly desire ?"
-              name="title"
-              aria-label="Search"
+          <input
+            class="mx-2 col-4 rounded"
+            type="text"
+            id="search-box"
+            placeholder="What is it that you truly desire ?"
+            name="title"
+            aria-label="Search"
           />
 
           <span> the cool stuff.</span>
